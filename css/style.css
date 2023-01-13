@@ -152,6 +152,9 @@ li a{
     display: flex;
     align-items: center;
 }
+.ratting i{
+    color: var(--ratting-color);
+}
 .ratting_point{
     margin-left: 8px;
     font-weight: 700;
@@ -165,3 +168,27 @@ li a{
     color: var(--product-details-color);
 }
 /* products section styles end */
+/* featured section start */
+.featured{
+   margin-bottom: 600px;
+}
+.feature_product{
+    display: flex;
+    gap: 100px;
+}
+.feature_content{
+    margin-top: 30px;
+}
+.feature_title{
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--footer-color);
+}
+.feature_description{
+    padding: 26px 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* featured section end */
+
