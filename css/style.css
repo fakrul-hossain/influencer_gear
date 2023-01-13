@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-::root {
+:root {
   --primary-color: #e02c6d;
   --secondary-color: #3a3a3a;
   --body-color: #aaaaaa;
@@ -15,7 +15,7 @@
   padding: 0;
 }
 body{
-    background-color: var(--body-color);
+    /* background-color: var(--body-color); */
     font-family: 'Poppins', sans-serif;
 }
 /* reusable component start*/
@@ -24,6 +24,7 @@ body{
     font-size: 16px;
     color: var(--btn-text-color);
     background-color: var(--primary-color);
+    text-decoration: none;
     padding: 10px 24px;
 }
 .btn_primary{
@@ -36,7 +37,6 @@ section, header{
 /* reusable component end*/
 /* header section styles start */
 /* nav style start */
-/* nav style end */
 nav{
     padding-top: 60px;
     display: flex;
@@ -59,6 +59,37 @@ li a{
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 16px;
+}
+/* nav style end */
+.header_area{
+    display: flex;
+    gap: 130px;
+}
+.header_content{
+    padding: 150px 0; 
+}
+.header_title{
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--secondary-color);
+}
+.header_description{
+    margin: 26px 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+.header_img{
+    padding: 100px 0;
+}
+.camera_img{
+    margin-top: 25px;
+    position: absolute;
+    z-index: 1;
+}
+.circle_img{
+    position: relative;
+    /* z-index: -1; */
 }
 /* header section styles end */
 
