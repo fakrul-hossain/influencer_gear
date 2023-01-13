@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+::root {
+  --primary-color: #e02c6d;
+  --secondary-color: #3a3a3a;
+  --body-color: #aaaaaa;
+  --footer-color: #0a0826;
+  --ratting-color: #fb8200;
+  --product-title-color: #18191f;
+  --product-details-color: #787885;
+  --product-price-color: rgba(0, 0, 0, 0.87);
+  --btn-text-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-color: var(--body-color);
+    font-family: 'Poppins', sans-serif;
+}
+/* reusable component start*/
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--btn-text-color);
+    background-color: var(--primary-color);
+    padding: 10px 24px;
+}
+.btn_primary{
+    border-radius: 41px;
+}
+section, header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+/* reusable component end*/
+/* header section styles start */
+/* nav style start */
+/* nav style end */
+nav{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_title{
+    font-weight: 700;
+    font-size: 24px;
+}
+ul{
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+ul li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+/* header section styles end */
+
