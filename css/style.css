@@ -55,11 +55,14 @@ ul{
 ul li{
     list-style-type: none;
 }
-li a{
+li a, .fas{
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 16px;
+}
+.hide{
+    display: none;
 }
 /* nav style end */
 .header_area{
@@ -220,3 +223,83 @@ footer{
 }
 /* footer section end */
 
+/* responsive area */
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* mobile responsive nav start */
+    nav{
+        display: none;
+    }
+    .mobile_nav{
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile_nav a{
+        width: 24px;
+    }
+    /* mobile responsive nav start */
+    /* mobile responsive heard start */
+    .header_area{
+        width: 100%;
+        text-align: center;
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+    .header_content, .header_img{
+        padding: 0;
+    }
+    .header_title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .header_description{
+        text-align: center;
+        font-size: 14px;
+    }
+    .camera_img{
+    width: 200px;
+    margin-left: 25px;
+    }
+    .circle_img{
+    width: 250px;
+    }
+    /* mobile responsive heard end */
+    /* mobile responsive brand start */
+    .brand{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .brand_logo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 20px;
+        margin: 0 auto;
+    }
+    .brand_logo img{
+        width: 50px;
+    }
+    /* mobile responsive brand end */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    nav{
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .mobile_nav{
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .mobile_nav{
+        display: none;
+    }
+}
