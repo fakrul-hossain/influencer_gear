@@ -112,8 +112,7 @@ li a, .fas{
 }
 .product{
     display: grid;
-    grid-template-columns: repeat(3, 1fr
-    );
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     column-gap: 0;
 }
@@ -128,6 +127,7 @@ li a, .fas{
    text-align: right;
 }
 .product_see_more a{
+    margin-right: 50px;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
@@ -135,7 +135,6 @@ li a, .fas{
 }
 .products_items{
     width: 329px;
-
 }
 .product_item{
     padding: 15px 15px;
@@ -221,6 +220,7 @@ footer{
     margin-left: 16px;
     text-decoration: none;
 }
+
 /* footer section end */
 
 /* responsive area */
@@ -240,7 +240,7 @@ footer{
         width: 24px;
     }
     /* mobile responsive nav start */
-    /* mobile responsive heard start */
+    /* mobile responsive header start */
     .header_area{
         width: 100%;
         text-align: center;
@@ -270,17 +270,66 @@ footer{
     .brand{
         width: 100%;
         margin-top: 50px;
+        padding: 0;
     }
     .brand_logo{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        row-gap: 20px;
-        margin: 0 auto;
+        row-gap: 30px;
+        padding: 0;
+        background: none;
+        border-radius: 0;
     }
     .brand_logo img{
+        margin-left: 20px;
         width: 50px;
     }
+    /* .brand_logo:nth-child(5){
+        padding-left: 30px;
+    } */
     /* mobile responsive brand end */
+    /* mobile responsive products start */
+    .product_title{
+        font-size: 16px;
+    }
+    .product{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .products_items{
+        margin: 0 auto;
+    }
+    .product_see_more a{
+        margin-right: 20px;
+    }
+    /*mobile responsive featured start */
+    .featured{
+        width: 100%;
+    }
+    .feature_product{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    .feature_product img{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .feature_title{
+        font-size: 24px;
+    }
+    /*mobile responsive featured end */
+    /* mobile responsive footer start */
+    .footer_title{
+        font-size: 16px;
+    }
+    .footer_description{
+        font-size: 12px;
+    }
+    /* mobile responsive footer end */
+    /* mobile responsive products end */
 }
 
 /* Small devices (landscape phones, 576px and up) */
